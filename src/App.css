@@ -1,38 +1,132 @@
-.App {
+.curriculum-container {
+  font-family: 'Arial', sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de la cabecera */
+.header {
   text-align: center;
+  margin-bottom: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.header h2 {
+  font-size: 24px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.header p {
+  font-size: 16px;
+  color: #777;
+  line-height: 1.6;
+}
+
+/* Estilos de la sección de contacto */
+.contact-info {
+  margin-bottom: 30px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.contact-info ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.contact-info ul li {
+  font-size: 16px;
+  color: #0073e6;
+  margin-bottom: 8px;
+}
+
+.contact-info ul li a {
+  text-decoration: none;
+  color: #0073e6;
+}
+
+.contact-info ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos de la sección de hobbies */
+.hobbies,
+.skills,
+.education,
+.experience {
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #0073e6;
+  padding-bottom: 5px;
+}
+
+/* Lista de elementos en cada sección */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* Estilos adicionales para una mejor presentación */
+ul li strong {
+  color: #333;
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+  .curriculum-container {
+    padding: 15px;
+  }
+
+  .header h1 {
+    font-size: 28px;
+  }
+
+  .header h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .contact-info p,
+  .hobbies ul li,
+  .skills ul li,
+  .education p,
+  .experience ul li {
+    font-size: 14px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 15px auto;
+  display: block;
 }
